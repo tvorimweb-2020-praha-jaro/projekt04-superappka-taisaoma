@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -14,20 +20,141 @@ html { box-sizing: border-box; }
 */
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+  margin: 0 auto; /* pruh je na stránce vycentrovaný */
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.menu {
+  margin: 0 0 0 20px;
+  padding: 0;
+  text-align: left;
+}
+
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  color: #25133d;
+  display: inline-block;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.superappka {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hlavicka {
+  background-image: url(images/telefon.png), url(images/pozadi.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  background-size: 300px cover;
+  padding: 30px 30px 30px 50px;
+}
+
+.nazev {
+  color: #e5e5e5;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 0;
+  margin-top: 0;
+}
+.slogan {
+  color: #e5e5e5;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.akce {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.tlacitko1 {
+  border-color: #e5e5e5;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 15px;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+}
+.tlacitko2 {
+  border-color: #e5e5e5;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 15px;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+}
+
+.tlacitko1:active,
+.tlacitko1:focus,
+.tlacitko1:hover {
+  background-color: #48418e;
+  cursor: pointer;
+}
+
+.tlacitko2:active,
+.tlacitko2:focus,
+.tlacitko2:hover {
+  background-color: #48418e;
+  cursor: pointer;
+}
+
+.informace {
+  display: flex;
+  margin: 30px;
+}
+.informace p {
+  margin: 10px;
+}
+.cestuj,
+.chatuj,
+.zazij {
+  margin: 20px;
+  text-align: center;
+}
+h1 {
+  color: #48418e;
+  font-size: 18px;
+}
+
+.informace img {
+  width: 70px;
+}
+
+.paticka {
+  background-color: #48418e;
+  color: #e5e5e5;
+  font-size: small;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
